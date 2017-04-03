@@ -1,0 +1,126 @@
+.content__inner-404 {
+  margin-left: 0 !important;
+
+  button.back {
+    width: 505px;
+    margin: 0 auto;
+    height: 56px;
+    border: 0;
+    font-size: 26px;
+    padding: 0;
+    background: #0eb2e8;
+    color: #fff;
+    font-family: 'Ubuntu';
+    font-weight: 300;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-bottom: 2px solid #0273b7;
+    margin-left: -3px;
+    z-index: 3;
+    transition: .2s linear;
+    margin-top: 60px;
+    margin-bottom: 60px;
+
+    @media @phone {
+      width: 100%;
+      font-size: 20px;
+    }
+
+    &:hover {
+      background: #56d8ff;
+    }
+  }
+
+  .form404 {
+    margin-top: 170px;
+
+    .form {
+      height: 369px;
+      background: rgb(213, 231, 241);
+      width: 888px;
+      margin: 0 auto;
+      padding-top: 180px;
+      position: relative;
+
+      @media @tablet {
+        width: 100%;
+      }
+
+      @media @phone {
+        width: 100%;
+      }
+
+      .boy {
+        background: url(/media/img/404boy.png) no-repeat;
+        width: 95%;
+        height: 340px;
+        background-size: cover;
+        position: absolute;
+        z-index: 4;
+        top: -160px;
+
+        @media @phone {
+          background-position-x: 50%;
+        }
+      }
+
+      .input-group {
+        width: 90%;
+        margin: 0 auto;
+
+        input {
+          width: 100%;
+          height: 56px;
+          border: 0;
+          font-size: 17px;
+          padding-left: 20px;
+          padding-right: 20px;
+          font-family: 'Ubuntu';
+
+          @media @phone {
+            text-align: center;
+          }
+
+          &:focus {
+            box-shadow: inset 0px 5px 10px 0px rgba(0,0,0,0.3) !important;
+          }
+        }
+
+        .input-group-btn {
+          @media @phone {
+            display: block;
+            clear: both;
+            width: 100%;
+          }
+        }
+
+        button {
+          width: 206px;
+          height: 56px;
+          border: 0;
+          font-size: 22px;
+          padding: 0;
+          background: #0eb2e8;
+          color: #fff;
+          font-family: 'Ubuntu';
+          font-weight: 300;
+          border-top-left-radius: 0;
+          border-bottom-left-radius: 0;
+          margin-left: -3px;
+          z-index: 3;
+          transition: .2s linear;
+
+          &:hover {
+            background: #56d8ff;
+          }
+
+          @media @phone {
+            border-radius: 3px;
+            margin-top: 20px;
+            width:100%;
+          }
+        }
+      }
+    }
+  }
+}

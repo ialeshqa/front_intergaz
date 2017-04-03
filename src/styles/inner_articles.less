@@ -1,0 +1,142 @@
+.content__inner-articles {
+  .articles_mode {
+    height: 130px;
+    background: #fff;
+    padding-left: 35px;
+    padding-right: 35px;
+
+    @media @phone {
+      height: 240px;
+    }
+
+    .left {
+      float: left;
+
+      @media @phone {
+        width: 100%;
+        .mode {
+          width: 32%;
+          margin-right: 2%;
+          text-align: center;
+          margin-top: 30px;
+
+          &:first-child {
+            display: block;
+            float: none;
+            width: 123px;
+            margin: 0 auto;
+            margin-top: 50px;
+          }
+
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+
+    .right {
+      float: right;
+
+      @media @phone {
+        float: left;
+        width: 100%;
+
+        .mode {
+          width: 32%;
+          margin-right: 2%;
+          margin-top: 30px;
+          text-align: center;
+
+          &:last-child {
+            margin-right: 0;
+          }
+
+        }
+      }
+    }
+
+    .mode {
+      height: 30px;
+      margin-top: 50px;
+      padding-left: 20px;
+      padding-right: 20px;
+      line-height: 30px;
+      font-size: 16px;
+      font-weight: normal;
+      float: left;
+      cursor: pointer;
+
+      span {
+        color: #0273b7;
+        border-bottom: 1px solid #d7e9f4;
+      }
+
+      &-selected {
+        background: #f9f5e4;
+        cursor: default;
+
+        span {
+          color: #000;
+          border-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .articles {
+    .item {
+      @media @tablet {
+        &:nth-child(2n) {
+          margin-right: -30px;
+        }
+
+        &:nth-child(odd) {
+          margin-left: -10px;
+        }
+      }
+
+      @media @phone {
+        &:nth-child(2n) {
+          margin-right: 0;
+        }
+
+        &:nth-child(odd) {
+          margin-left: 0;
+        }
+      }
+    }
+
+    .b__news {
+      margin-bottom: 20px;
+
+      .big {
+        .content-block__news-item__cover {
+          height: 100%;
+          background-size: cover !important;
+          background-position: center !important;
+        }
+
+        .over {
+          margin-top: -300px;
+
+          .content-block__news-item__meta {
+            span {
+              color: #fff !important;
+            }
+          }
+
+          .content-block__news-item__caption {
+            a {
+              color: #fff !important;
+
+              &:hover {
+                border-color: #fff;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

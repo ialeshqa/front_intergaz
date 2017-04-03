@@ -1,0 +1,393 @@
+.content__inner-article {
+  .article-subscribe-clear {
+    height: 130px;
+  }
+  .article-subscribe {
+    height: 130px;
+    line-height: 130px;
+    width: 100%;
+    margin-top: -130px;
+    position: absolute;
+    margin-left: -20px;
+    padding-top: 38px;
+    background: rgb(213, 231, 241);
+
+    .center {
+      width: 805px;
+      margin: 0 auto;
+
+      @media @tablet {
+        width: 700px;
+      }
+    }
+
+    .col-1 {
+      float: left;
+      width: 57px;
+      margin-right: 20px;
+    }
+
+    .col-2 {
+      float: left;
+      width: 170px;
+      line-height: 22px;
+      padding-top: 8px;
+      margin-right: 20px;
+    }
+
+    .col-3 {
+      float: left;
+      .input-group {
+        width: 535px;
+
+        @media @tablet {
+          width: 360px;
+        }
+        margin: 0 auto;
+
+        input {
+          width: 329px;
+
+          @media @tablet {
+            width: 225px;
+          }
+          height: 56px;
+          border: 0;
+          font-size: 17px;
+          padding-left: 20px;
+          padding-right: 20px;
+          font-family: 'Ubuntu';
+
+          &:focus {
+            box-shadow: inset 0px 5px 10px 0px rgba(0,0,0,0.3) !important;
+          }
+        }
+
+        button {
+          width: 206px;
+          height: 56px;
+          border: 0;
+          font-size: 22px;
+          padding: 0;
+          background: #0eb2e8;
+          color: #fff;
+          font-family: 'Ubuntu';
+          font-weight: 300;
+          border-top-left-radius: 3px;
+          border-bottom-left-radius: 3px;
+          margin-left: -3px;
+          z-index: 3;
+          transition: .2s linear;
+
+          &:hover {
+            background: #56d8ff;
+          }
+        }
+      }
+    }
+  }
+
+  .img-alt {
+    margin-top: 15px;
+    font-size: 14px;
+    text-align: center;
+    font-weight: normal;
+  }
+
+  .article-tags {
+    p {
+      color: #fff;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        display: inline-block;
+        margin-right: 10px;
+        color: #fff;
+        background: #004877;
+        border-radius: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  .page__head {
+    .date {
+      color: #fff;
+      padding-top: 139px;
+      font-size: 18px;
+      line-height: 32px;
+    }
+
+    h2 {
+      margin-top: 0;
+    }
+  }
+
+  .subscribe_articles {
+    width: 100%;
+    height: 278px;
+    background: rgb(213, 231, 241);
+    padding-left: 25px;
+    padding-right: 25px;
+
+    h2 {
+      font-size: 24px;
+      padding-top: 50px;
+    }
+
+    .input {
+      width: 100%;
+      height: 50px;
+      text-align: center;
+      font-size: 17px;
+      margin-top: 20px;
+    }
+
+    button {
+      font-size: 17px;
+      height: 45px;
+      text-align: center;
+      background: rgb(14, 178, 232);
+      color: #fff;
+      border: 0;
+      margin-top: 10px;
+      width: 100%;
+    }
+  }
+
+  .first-article {
+    margin-top: 100px;
+    @media @phone {
+      margin-top: 35px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    .text {
+      font-size: 18px;
+      line-height: 32px;
+      padding-left: 25px;
+
+      @media @phone {
+        padding-left: initial;
+        font-size: 16px;
+      }
+      text-align: left;
+
+      ul {
+        //margin: 0;
+        //padding-left: 0;
+      }
+      /*ul {
+        list-style-type: none !important;
+      }
+      ul > li {
+        text-indent: -5px;
+        color: #048EC9;
+
+        p {
+          display: inline;
+          color: #000;
+        }
+      }*/
+
+      ul {
+         list-style: none;
+         padding:0;
+         margin:0;
+      }
+
+      li {
+         padding-left: 1em;
+         text-indent: -.7em;
+
+         p {
+           display: inline;
+         }
+      }
+
+      li:before {
+         content: "— ";
+         color: #048EC9; /* or whatever color you prefer */
+      }
+
+      ol > li {
+        color: #048EC9;
+
+        p {
+          color: #000;
+        }
+      }
+      /*ul > li:before {
+        content: "—";
+        color: #048EC9;
+        text-indent: -5px;
+      }*/
+    }
+
+    .left {
+      width: 100%;
+      float: left;
+      margin-right: -336px;
+      padding-right: 336px;
+
+      @media @phone {
+        margin-right: initial;
+        padding-right: initial;
+
+        img {
+          width: 100% !important;
+        }
+      }
+    }
+
+    .right {
+      float: right;
+      width: 316px;
+
+      @media @phone {
+        display: none;
+      }
+
+      .subscribe {
+        background: url(/media/img/banner.png) no-repeat;
+        background-size: cover;
+        width: 316px;
+        height: 632px;
+        text-align: left;
+        color: #fff;
+        padding-top: 75px;
+        padding-left: 25px;
+        padding-right: 25px;
+
+        .title {
+          font-size: 35px;
+          line-height: 38px;
+        }
+
+        .text {
+          margin-top: 30px;
+          font-size: 14px;
+          padding-left: 0 !important;
+          line-height: 18px;
+        }
+
+        span label {
+          display: none;
+          font-family: 'Ubuntu';
+          font-weight: 300;
+          font-size: 12px;
+          margin-left: 20px;
+          padding-bottom: 53px;
+          color: #929496;
+          position: absolute;
+        }
+
+
+        span.textarea label {
+          padding-bottom: 34px;
+        }
+
+        span input:focus ~ label {
+          display: block;
+        }
+
+        span input:focus ~ span#area {
+          display: block;
+        }
+
+        span input:focus ~ label {
+          display: block;
+          margin-top: 5px;
+        }
+
+        .margin {
+          margin-top: 60px;
+        }
+
+        input {
+          color: #000;
+        }
+
+        .subscribers {
+          color: rgb(14, 178, 232);
+          text-align: center;
+          margin-top: 30px;
+        }
+
+        button {
+          clear: both;
+          height: 60px;
+          line-height: 60px;
+          color: #fff;
+          padding: 0;
+          background: #0eb2e8;
+          font-size: 17px;
+          border: 0;
+          border-bottom: 2px solid #0273b7;
+          border-radius: 3px;
+          font-family: 'Ubuntu';
+          font-weight: lighter;
+          width: 100%;
+          margin-top: 0;
+          transition: .2s linear;
+
+          @media @phone {
+            font-size: 16px;
+          }
+
+          &:hover {
+            background: #56d8ff;
+          }
+        }
+
+        input {
+          height: 60px;
+          line-height: 17px;
+          border-radius: 3px;
+          border: 1px solid #cccccc;
+          font-size: 17px;
+          padding: 0;
+          padding-left: 20px;
+          width: 100%;
+          margin-bottom: 10px;
+          //display: inline-block;
+          float: left;
+
+          @media @phone {
+            width: 100%;
+            font-size: 13px;
+          }
+
+          &:focus {
+            &::-moz-placeholder {
+              color: #fff;
+            }
+
+            &:-moz-placeholder {
+              color: #fff;
+            }
+
+            &:-ms-input-placeholder {
+              color: #fff;
+            }
+
+            &::-webkit-input-placeholder {
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}

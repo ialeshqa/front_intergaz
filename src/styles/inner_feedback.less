@@ -1,0 +1,137 @@
+.content__inner-feedback {
+  .page__head-feedback {
+    h2 {
+      min-width: 600px;
+
+      @media @phone {
+        min-width: 300px;
+        margin-top: 145px;
+      }
+    }
+
+    .sub {
+      @media @phone {
+        display: block !important;
+        width: 300px !important;
+        margin: 0 auto;
+        font-size: 16px !important;
+      }
+    }
+  }
+
+  .feedback-sect {
+    &.white {
+      background: #fff;
+    }
+
+    padding: 34px;
+  }
+
+  .clients {
+    display: flex;
+    justify-content: space-between;
+
+    @media @phone {
+      display: none;
+    }
+    .item {
+      width: 33.3%;
+      float: left;
+      text-align: left;
+
+      &:first-child {
+        margin-right: 40px;
+      }
+
+      &:last-child {
+        margin-left: 40px;
+      }
+
+      .bg {
+        height: 189px;
+        background: url(/media/img/SmallAndrea.jpg) no-repeat;
+        background-size: cover;
+        position: relative;
+
+        .icon {
+          left: 50%;
+          margin-left: -29px;
+          margin-top: 70px;
+          cursor: pointer;
+          position: absolute;
+        }
+      }
+
+      h3 {
+        font-size: 16px;
+        line-height: 23px;
+        font-weight: bold;
+      }
+
+      .gray {
+        font-size: 14px;
+        line-height: 23px;
+      }
+    }
+  }
+
+  .clients-logo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .item {
+      width: 33.3%;
+      height: 258px;
+      float: left;
+      text-align: left;
+      background: #fff;
+
+
+      &:hover {
+        background: #f0f0f2;
+      }
+
+      border-right: 1px solid #bcbec0;
+
+      &:nth-child(3n) {
+        border-right: 0;
+      }
+
+      &:nth-child(-n+3) {
+        border-bottom: 1px solid #bcbec0;
+      }
+
+
+      @media @tablet {
+        width: 50%;
+
+        &:nth-child(-n+3) {
+          border-bottom: 0;
+        }
+
+
+        &:nth-child(2n) {
+          border-right: 0;
+        }
+
+        &:nth-child(3n) {
+          border-right: 1px solid #bcbec0;
+        }
+
+        &:nth-child(-n+2) {
+          border-bottom: 1px solid #bcbec0;
+        }
+      }
+
+      .bg {
+        background: url(/media/img/e4a1acd727f56c9cd46d172380ae0e61.jpg) no-repeat;
+        background-size: cover;
+        width: 94px;
+        height: 94px;
+        margin: 0 auto;
+        margin-top: 75px;
+      }
+    }
+  }
+}

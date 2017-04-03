@@ -1,0 +1,136 @@
+.content__inner-search {
+  .row-search {
+    @media @phone {
+      margin: 0;
+      margin-bottom: -10px;
+    }
+  }
+
+  .search {
+    padding-top: 65px;
+    padding-bottom: 65px;
+    background: #fff;
+    padding-left: 34px;
+    padding-right: 34px;
+
+    @media @phone {
+      padding-left: 25px;
+      padding-right: 25px;
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+
+    .form {
+      .icon-searchform {
+        margin-left: 14px;
+        margin-top: 10px;
+        position: absolute;
+      }
+
+      .icon-searchclose {
+        margin-left: 415px;
+        margin-top: 7px;
+        cursor: pointer;
+        position: absolute;
+
+        @media @phone {
+          margin-left: auto;
+          right: 45px;
+        }
+      }
+
+      .searchinput {
+        border: 1px solid rgb(163, 165, 168);
+        border-radius: 3px;
+        height: 39px;
+        font-size: 18px;
+        color: rgb(51,51,51);
+        width: 450px;
+        padding-left: 40px;
+        line-height: 39px;
+
+        @media @phone {
+          width: 100%;
+        }
+      }
+    }
+
+    .results {
+      margin-top: 60px;
+      width: 620px;
+
+      @media @phone {
+        width: 100%;
+        padding-right: 10px;
+        padding-left: 10px;
+        margin-top: 50px;
+      }
+
+      h3 {
+        font-size: 26px;
+        margin-top: 0;
+        margin-bottom: 30px;
+        font-weight: bold;
+      }
+
+      .result {
+        margin-bottom: 45px;
+
+        .title {
+          font-size: 18px;
+          line-height: 25px;
+          margin-bottom: 20px;
+
+          a {
+            color: rgba(2, 115, 183, 1);
+            border-bottom: 1px solid #0eb2e8;
+            padding-bottom: 1px;
+            transition: all .2s linear;
+
+            &:hover {
+              color: #0eb2e8;
+              border-color: transparent;
+              text-decoration: none;
+            }
+          }
+        }
+
+        .text {
+          font-size: 15px;
+          line-height: 18px;
+
+          @media @phone {
+            font-size: 13px;
+            line-height: 15px;
+          }
+        }
+      }
+    }
+
+    .loadmore {
+      width: 620px;
+      border: 1px solid rgb(163, 165, 168);
+      border-radius: 3px;
+      height: 39px;
+      line-height: 39px;
+      cursor: pointer;
+      text-align: center;
+
+      @media @phone {
+        width: 100%;
+      }
+
+      span {
+        color: rgba(2, 115, 183, 1);
+        font-size: 18px;
+        text-align: center;
+      }
+
+      .icon {
+        margin-left: 300px;
+        margin-top: 15px;
+      }
+    }
+  }
+
+}
